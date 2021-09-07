@@ -1,3 +1,38 @@
-h1{
-    font-size: larger;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-image: radial-gradient(rgb(108, 166, 212),rgb(172, 215, 240),rgb(64, 116, 194));
 }
+:root {
+    --primary-color: #4b32a3;
+    --secondary-color: rgb(71, 71, 197);
+    --off-white: #F3F4F6;
+    --dark-gray: #6B7280;
+}
+h1{
+    color:var(--primary-color);
+   text-align: center;
+   text-decoration: underline;
+}
+p{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: x-large;
+}
+section{
+    text-align: center;
+    padding : 1rem 2rem 1rem;
+    
+}
+button{
+    border-style: solid;
+    color: var(--primary-color);
+    font-size: larger;
+    border-radius: 40px;
+    font-weight: bolder;
+    padding: 0.5rem 1rem 0.5rem;
+    box-shadow: 0.5px 8px 14px 0 var(--secondary-color), 0 6px 20px 0 var(--primary-color);
+}
+
+

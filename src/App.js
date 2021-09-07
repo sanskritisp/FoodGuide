@@ -6,7 +6,7 @@ import './style.css';
    {name: "Name: DOSA",
     descrp: "Description: A dosa is a thin pancake or crepe originating from South India, made from a fermented batter predominantly consisting of lentils and rice.",
     rate: "Ratings: 8/10"},
-  
+    
   {
     name: "Name: PONGAL",
     descrp: "Description: Pongal is a sweet rice dish that is usually eaten during special or ceremonial occasions.It is usually cooked in a clay pot over an open fire.",
@@ -77,10 +77,13 @@ function App() {
   return (
     <div className="App">
       <h1>FOOD GUIDE</h1>
-      <button onClick ={()=>setlistToDisplay("SouthIndian")}>SOUTH INDIAN</button>
+      <p>Checkout the dishes list with my ratings on it.</p>
+      <section>
+    <button onClick ={()=>setlistToDisplay("SouthIndian")}>SOUTH INDIAN</button>
      <button onClick ={()=>setlistToDisplay("NorthIndian")}>NORTH INDIAN</button>
      <button onClick ={()=>setlistToDisplay("Chinese")}>CHINESE</button>
      <button onClick ={()=>setlistToDisplay("Mughlai")}>MUGHLAI</button>
+     </section>
      { listX[listToDisplay].map((i)=>{
        return(<div>
         {i.name} <br/>
