@@ -84,11 +84,12 @@ function App() {
      <button onClick ={()=>setlistToDisplay("Chinese")}>CHINESE</button>
      <button onClick ={()=>setlistToDisplay("Mughlai")}>MUGHLAI</button>
      </section>
+     <br/><br/><br/>
      { listX[listToDisplay].map((i)=>{
        return(<div>
         {i.name} <br/>
         {i.descrp} <br/>
-        {i.rate}
+        {i.rate}<br/><br/><br/>
       </div>);
 
       })}
