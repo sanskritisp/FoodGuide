@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto Slab', serif;
-    background-image: radial-gradient(rgb(108, 166, 212),rgb(172, 215, 240),rgb(64, 116, 194));
+    background-image: linear-gradient(rgb(150, 192, 228),rgb(219, 108, 155));
 }
 :root {
     --primary-color: #4b32a3;
@@ -38,6 +38,6 @@ div{
     text-align: center;
     color: var(--primary-color);
     font-size: large;
-    border-style: double;
+   
 }
 
