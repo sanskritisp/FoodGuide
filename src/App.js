@@ -3,17 +3,17 @@ import './style.css';
 
  const SouthIndian=[
   
-   {name: "Name: DOSA",
+   {name: "1.Name: DOSA",
     descrp: "Description: A dosa is a thin pancake or crepe originating from South India, made from a fermented batter predominantly consisting of lentils and rice.",
     rate: "Ratings: 8/10"},
     
   {
-    name: "Name: PONGAL",
+    name: "2.Name: PONGAL",
     descrp: "Description: Pongal is a sweet rice dish that is usually eaten during special or ceremonial occasions.It is usually cooked in a clay pot over an open fire.",
     rate: "Ratings: 7.5/10"
   },
   {
-    name: "Name: UPMA",
+    name: "3.Name: UPMA",
     descrp: "Description: Upma is a wholesome Indian dish made with dry semolina or rice flour, cooked into a thick porridge. ",
     rate: "Ratings: 7/10"
   }
@@ -85,9 +85,9 @@ function App() {
      <button onClick ={()=>setlistToDisplay("Mughlai")}>MUGHLAI</button>
      </section>
      <br/><br/><br/>
-     { listX[listToDisplay].map((i)=>{
+     { listX[listToDisplay].map((i,j)=>{
        return(<div>
-        {i.name} <br/>
+        {j+1}.{i.name} <br/>
         {i.descrp} <br/>
         {i.rate}<br/><br/><br/>
       </div>);
